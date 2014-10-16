@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-	var config = require('./config');
+	var config = require(process.cwd() + '/config');
 	var repos = [];
 	var forever =  {};
 	var grunt_config = {
