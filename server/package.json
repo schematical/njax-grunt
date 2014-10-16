@@ -1,0 +1,9 @@
+{
+  "name": "njax-grunt",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-gitPull": "~0.5.0",
+	"grunt-forever":"*"
+  }
+}

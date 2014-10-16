@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 		forever: forever
 	});
 	for(var i in config.apps){
-		grunt.registerTask ('deploy ' + i, ['gitPull:' + i,'forever:' + i + ':start'])
+		grunt.registerTask('deploy ' + i, ['gitPull:' + i,'forever:' + i + ':start']);
 	}
 	grunt.loadNpmTasks('grunt-gitPull');
 }
