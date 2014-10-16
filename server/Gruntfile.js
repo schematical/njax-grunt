@@ -1,3 +1,4 @@
+var path = require('path');
 module.exports = function(grunt) {
 	var config = require(process.cwd() + '/config');
 	var repos = [];
@@ -19,7 +20,7 @@ module.exports = function(grunt) {
 
 		grunt_config.forever[i] =  {
 			options: {
-				index: config.apps[i].path + '/app.js',
+				index: path.join(config.apps[i].path) + '/app.js',
 				logDir: 'logs'
 			}
 		}
