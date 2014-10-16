@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
 		grunt_config.forever[i] =  {
 			options: {
-				index: path.join(path.join.apply(config.apps[i].path),  + 'app.js'),
+				index: path.join(path.join.apply(this, config.apps[i].path),  'app.js'),
 				logDir: 'logs'
 			}
 		}
