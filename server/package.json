@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "grunt": "*",
-    "grunt-gitpull": "*",
+    "grunt-gitpull": "git+ssh://git@github.com:schematical/grunt-gitPull.git#master",
 	"grunt-forever":"*"
   }
 }
